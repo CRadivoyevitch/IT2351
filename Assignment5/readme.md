@@ -21,7 +21,7 @@ S6		Slim Jim	East 99 st.	Slim@school.edu		Math1025	Networking
 S7		Bob Bob		63 Bob Ave.	Bob@school.edu		IT1050		Programming
 
 ### How N1 Form was achieved 
-Changed Classes to 'Class' and made individual rows based on the class. 1st
+Changed Classes to 'Class' and made individual rows based on the class.
 
 ## 2N
 Table: Student Info
