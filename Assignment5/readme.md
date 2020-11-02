@@ -1,4 +1,8 @@
 # Executive Summary
+This Assignment required me primarily to understand how to normalize data and create a view. 
+A Normalization more or less organizes data to a filtered and comprehensible set of separate tables so as to hold unique rows. There are three primary layers of Normalization before one can consider their data to be properly normalized. First requires cells with multiple entries to be edited so that each entry holds its own cell. From there data needs to be brought into separate tables so as to have no repeating cells bar the cells in the Primary Key. A foreign key is utilized to connect tables to one another.
+A view is a virtual table based on the result-set of an SQL statement, per definition on W3Schools.com. (https://www.w3schools.com/sql/sql_view.asp) 
+
 
 # Normailization/EER Model
 ## 1N
@@ -62,3 +66,4 @@ Major Classes: Primary-major, Foreign-Class ID
 
 
 # Conclusion
+In order to create the proper tables needed for normalization, I am reticent to state that there was a constant looking back to the various resources provided. Normalization appears to be a quality standard to any person looking to make their own tables, so it is important to train a mindset to perform it correctly. I am not certain yet how I will incorporate views into my future plans, but assume as with the other topics covered in this course, it is an essential fundamental to any MySQL programmers toolkit. 
