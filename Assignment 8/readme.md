@@ -19,15 +19,24 @@ these variables show the settings of a database. Status variables provide counts
 
 
 A. Explain the following code (copy and paste the code into your readme.md file and comment all sections):
+
 CREATE USER guitar_admin@localhost IDENTIFIED BY 'pa55word';-------------------- An administrator was created with password "pa55word."
+
 CREATE USER guitar_user@localhost IDENTIFIED BY 'pa55word';--------------------- A user was created with password "pa55word."
 
+
 GRANT ALL
+
 ON guitar.* 
+
 TO guitar_admin@localhost;------------------------------------------------------The Administrator is able to use all commands.
+
 GRANT SELECT, INSERT, UPDATE, DELETE
+
 ON guitar.*
+
 TO guitar_user@localhost;-------------------------------------------------------The User is able to use the SELECT, INSERT, UPDATE, DELETE commands.
+
 
 B. What are the privilege levels that can be granted to a user?
 
