@@ -48,21 +48,40 @@ BEFORE UPDATE ON products
 
 FOR EACH ROW
 
+
+
 BEGIN
 
 DECLARE errorMessage varchar(255);
 
 SET errorMessage = CONCAT('Price not in appropriate range');
 
-IF new.item_price <100>1200 THEN
+IF new.list_price <100>1200 THEN
 
 SIGNAL SQLSTATE '45000'
 
 SET MESSAGE_TEXT = errorMessage;
 
+
 END IF;
 
 END//
+
+
+UPDATE products
+
+SET list_price = 1300
+
+WHERE product_id = 1;
+
+SELECT list_price, product_id
+
+FROM products
+
+WHERE product_id = 1;
+
+
+
 
 
 
