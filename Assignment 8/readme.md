@@ -13,7 +13,7 @@ The Slow Query Log holds SQL statements that take a long time to execute.
  
 # Variables
  Explain the purpose of and provide an example of status and system variables
-
+these variables show the settings of a database. Status variables provide counts on different aspects of the server regarding the project at hand such as Bytes_received (How many Bytes have ben received) or sort_rows (how many sorted rows are present). System variables provide counts on different aspects of the server and how it functions for the user/admin, such as delayed_queue_size (What size queue (in rows) should be allocated or handling INSERT DELAYED), and default_tmp_storage_engine (The default storage engine (table type) for TEMPORARY tables).
 
 # Privileges
 
