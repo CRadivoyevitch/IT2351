@@ -123,6 +123,6 @@ FROM InventoryTable
 
 
 
-#Conclusion
+# Conclusion
 
 Understanding the implementation of these techniques was not a challenge, however it was vital that I practiced their usage to get a proper grasp of how to format an approach. Activity was not as simple as just adding data from nowhere. To accomplish the real-life scenarios provided I needed to think more abstract on how to accomplish the task at hand. I find the need for locks to be large when dealing with a high traffic database as an admin, and the use of triggers will make more complex data manipulation easier for the programmer to comprehend.
