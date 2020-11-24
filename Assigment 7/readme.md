@@ -41,15 +41,25 @@ Event timer: Inventory management
 In order to determine day-to-day logistics on ingredients, the baker must have their system updated on a daily basis. In creating an event timer to update their tables at closing, the baker can save time calculating needs, and the logistics company can get an immediate concept of what is demanded of them in a manner early enough to send supplies in a timely manner. As those working in the office-end will likely have a different schedule to the baker, having an event timer will bridge the gap on communication between the two counterparties. The table would be updated by adding a new row with the date and inventory amount for each item.
 
 CREATE EVENT EOD_Inventory_Update;
+
 ON SCHEDULE EVERY 1 DAY
+
 STARTS '2020-12-01 15:30:00'
+
 DO BEGIN
-	INSERT INTO [daily_inventory_table]
-	SELECT CAST (GetDate() as DATE),
-	SUM(CASE WHEN Status = 'item_1' THEN 1 ELSE 0 END) as item1
-	SUM(CASE WHEN Status = 'item_2' THEN 1 ELSE 0 END) as item2,
-	SUM(CASE WHEN Status = 'item_3' THEN 1 ELSE 0 END) as item3,
-	SUM(CASE WHEN Status = 'item_4' THEN 1 ELSE 0 END) as item
+
+INSERT INTO [daily_inventory_table]
+
+SELECT CAST (GetDate() as DATE),
+
+SUM(CASE WHEN Status = 'item_1' THEN 1 ELSE 0 END) as item1
+
+SUM(CASE WHEN Status = 'item_2' THEN 1 ELSE 0 END) as item2,
+
+SUM(CASE WHEN Status = 'item_3' THEN 1 ELSE 0 END) as item3,
+
+SUM(CASE WHEN Status = 'item_4' THEN 1 ELSE 0 END) as item
+
 FROM InventoryTable
 
 
