@@ -1,5 +1,5 @@
 # Executive Summary
-
+When working with a team there is a demand that heirarchy is built and held. having a manager or administrator to observe users provides stability and communication to team members, and association to specific roles allows users to hone their duties efficiently. Being able to understand the system itself is important for both user and administrator as it will reduce time spent solving issues.
 # Database Administrator Responsibilities
 
 The Database administrator is in charge of granting and restricting the privaledges of users, observing the activity that users are conducting, and maintaining the database to aid users.
@@ -51,12 +51,25 @@ D. Why would you want to do this?
   Time is saved in this approach as the customer has access to add data about themselves, cutting out communication time between them relaying to someone else the information, and lowering potential for typos or incorrect information.
 
 # Roles
- A. Create a role to provide update privileges to the categories table (either here in discussion format or in MySQL
-Workbench)
+ A. Create a role to provide update privileges to the categories table
+ 
+ B. Grant privileges to the role and, assign users to the role
+ 
 
- B. Grant privileges to the role and, assign users to the role (either here in discussion format or in MySQL
-Workbench)
+CREATE ROLE 'Category_updater';
 
- C. Explain why roles would be useful.
+GRANT UPDATE ON carltons_guitar_shop.categories TO 'Category_updater';
+
+CREATE USER 'updater1' Identified by 'updater1pass';
+
+GRANT 'Category_updater' TO 'updater1';
+
+
+C. Explain why roles would be useful.
+
+Providing roles gives a user a clear path to where and how they are able to manipulate data. This is useful when dealing with sensitive information or when users are prone to mistakes due to complex systems and near-similar table or colomn names. It can also help to narrow avenues of improvement when problem solving in human resources.
 
 # Conclusion 
+
+As this assignment was more focused on the role an administrator would play in a Mysql team, activity had much to do with interface comprehension and less regarding data manipulation. Assuming I find myself growing a data analytic operation to the point where having underlings is required, or opening the platform to where users would edit their own personal information, the ability to create and dictate power to the users will be vital in my success.
+
