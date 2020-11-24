@@ -7,7 +7,7 @@ The Database administrator is in charge of granting and restricting the privaled
 # Log Files
  The Error Log hold information on what errors have occured when running code during the server time.
 
-The General Query Log holds a record of things the platform is doing such as connecting, dissconnecting, and querr is doing (connect, disconnect, queries)
+The General Query Log holds a record of things the platform is doing such as connecting, disconnecting, and what the queue is doing (connect, disconnect, queries)
 
 The Slow Query Log holds SQL statements that take a long time to execute.
  
