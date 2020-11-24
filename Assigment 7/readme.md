@@ -1,6 +1,10 @@
 
 # Executive Summary
 
+These assignments were designed to test one's understanding of triggers, stored programs, and events. These allow for one to manipulate tables at time-intervals, upon a key phrase being called upon, and in ways more complicated than the UPDATE, INSERT, DELETE actions.
+
+Not covered in the assignments was the use of locks, which freezes a table from being manipulated. This is effective primarily in environments where multiple users are accessing and manipulaitng the table data, so it is understandable that its utilization would be difficult to perform in this current class scenario.
+
 # Stored Programs
 
 ## 1
@@ -35,6 +39,7 @@ If there is not a customer of that name, a statement would show saying "This cus
 >>GO
 
 ## 2
+I created a trigger which brought up an error message when the updated price of a product was too high or low. I then tested the activity to see if the code went through.
 
 use carltons_guitar_shop;
 
@@ -119,3 +124,5 @@ FROM InventoryTable
 
 
 #Conclusion
+
+Understanding the implementation of these techniques was not a challenge, however it was vital that I practiced their usage to get a proper grasp of how to format an approach. Activity was not as simple as just adding data from nowhere. To accomplish the real-life scenarios provided I needed to think more abstract on how to accomplish the task at hand. I find the need for locks to be large when dealing with a high traffic database as an admin, and the use of triggers will make more complex data manipulation easier for the programmer to comprehend.
