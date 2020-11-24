@@ -7,7 +7,7 @@
 I would utilize the 'Delete From' feature in the stored program, where the ID is equal to the customer ID inputed.
 If there is not a customer of that name, a statement would show saying "This customer was not found."
 
->>USE Database
+>>USE [Database]
 
 >>GO
 
